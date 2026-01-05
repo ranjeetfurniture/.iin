@@ -289,7 +289,28 @@ footer p {
 @media (max-width: 768px) {
   .section { padding: 60px 20px; }
   .owner-bio { grid-template-columns: 1fr; text-align: center; }
+  .gallery-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+}
+.gallery-slider img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  transition: transform 0.3s;
+}
+.gallery-slider img:hover {
+  transform: scale(1.05);
+}
+
   .hero h1 { font-size: 2.8rem !important; }
   .hero p { font-size: 1.1rem !important; }
   nav { flex-direction: column; gap: 15px; }
 }
+
