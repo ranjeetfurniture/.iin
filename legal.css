@@ -1,0 +1,91 @@
+:root {
+  --primary: #111111;
+  --accent: #C9A24D;
+  --light: #f7f7f7;
+  --gray: #666;
+  --border: #e0e0e0;
+  --radius: 10px;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--light);
+  color: #222;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.page-wrapper {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.page-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.page-subtitle {
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.section p {
+  color: #444;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-size: 15px;
+}
+
+button {
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #000;
+}
+
+.success-box {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.success-box h1 {
+  color: var(--primary);
+  font-size: 38px;
+}
+
+.success-box p {
+  color: var(--gray);
+  font-size: 18px;
+}
